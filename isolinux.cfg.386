@@ -1,0 +1,12 @@
+# D-I config version 2.0
+default install
+
+LABEL install
+   kernel /install.386/vmlinuz
+   append vga=normal initrd=/install.386/initrd.gz preseed/file=/cdrom/preseed.txt locale=en_US keymap=se --
+LABEL linux
+   kernel /install.386/vmlinuz
+   append vga=normal initrd=/install.386/initrd.gz preseed/file=/cdrom/preseed.txt locale=en_US keymap=se --
+
+prompt 0
+timeout 0
